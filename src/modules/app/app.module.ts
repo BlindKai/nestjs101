@@ -6,9 +6,11 @@ import { CustomersModule } from '@modules/customers/customers.module';
 import { ShippingsModule } from '@modules/shippings/shippings.module';
 import { LocationsModule } from '@modules/locations/locations.module';
 import { WarehousesModule } from '@modules/warehouses/warehouses.module';
+import { CommonModule } from '@modules/common/common.module';
 
 @Module({
   imports: [
+    CommonModule,
     OrdersModule,
     CustomersModule,
     ShippingsModule,
